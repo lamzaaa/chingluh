@@ -1,0 +1,135 @@
+.our-history
+	padding-bottom: 0
+	.section-title
+		padding-bottom: 32px
+	.container--tabs
+		.nav-tabs
+			li
+				min-width: 150px
+				height: 45px
+				border-radius: 23px
+				border: 1px solid $main
+				display: flex
+				align-items: center
+				justify-content: center
+				transition: all .5s
+				a
+					display: block
+					width: 100%
+					text-align: center
+					color: $main
+					font-size: 1rem
+					font-weight: 700
+					line-height: r(40px)
+					letter-spacing: 1px
+					transition: all .5s
+
+				&.active,
+				&:hover
+					background: $main
+					a
+						color: $white
+			li + li
+				margin-left: 20px
+			@media screen and ( max-width: 1279.98px )
+				width: 100%
+				overflow-x: auto
+				padding-bottom: 20px
+				li + li
+					margin-left: 30px
+		.tab-content
+			margin-top: 30px
+			.hero-slide-history
+				display: flex
+				.gallery-thumbs
+					position: relative
+					min-width: 180px
+					height: 120px
+					background: $cl-99
+					.swiper-inner
+						width: 100%
+						height: 100%
+						display: flex
+						justify-content: center
+						.title
+							padding-top: 21px
+							color: $white
+							font-size: r(40px)
+							font-weight: 700
+							line-height: r(40px)
+							text-align: left
+							text-transform: uppercase
+							letter-spacing: 4px
+					.swiper-button-next,
+					.swiper-button-prev
+						width: 30px
+						height: 30px
+						border-radius: 50%
+						border: 1px solid $white
+						top: 80%
+						transition: all .5s
+						&::after
+							color: $white
+							font-family: Material Icons
+							font-size: 1rem
+							font-weight: 400
+							line-height: 18px
+							letter-spacing: 1.6px
+							text-align: center
+							transition: all .5s
+						&:hover
+							background: $white
+							border: 1px solid $tran
+							&::after
+								color: $main
+					.swiper-button-next
+						right: 20px
+						&::after
+							content: 'arrow_forward'
+					.swiper-button-prev
+						left: 20px
+						&::after
+							content: 'arrow_back'
+				.gallery-tops
+					min-width: 1050px
+					border: 1px solid $cl-e0
+					background: $white
+					.swiper-inner
+						padding-top: 53px
+						padding-left: 62px
+						padding-right: 60px
+						padding-bottom: 55px
+						.content
+							padding-bottom: 22px
+							color: $cl-text
+							font-size: 1rem
+							line-height: 22px
+							text-align: left
+							letter-spacing: 1.6px
+						.img
+							+img-ratio(500/928)
+				@media screen and ( max-width: 1279.98px )
+					.gallery-thumbs
+						flex: 1 0 20%
+						min-width: unset
+					.gallery-tops
+						flex: 1 0 80%
+						min-width: unset
+						.swiper-inner
+							padding: 30px
+				@media screen and ( max-width: 575.98px )
+					flex-direction: column
+					.gallery-thumbs
+						flex: unset
+						width: 100%
+						.swiper-inner
+							align-items: center
+							.title
+								font-size: r(30px)
+								padding-top: 0
+						.swiper-button-next,
+						.swiper-button-prev
+							top: 50%
+					.gallery-tops
+						flex: unset
+						width: 100%

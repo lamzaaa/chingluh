@@ -1,0 +1,52 @@
+header
+	.header
+		.container
+			.wrap-header
+				.toggle-menu
+					em.material-icons menu
+					span menu
+				.logo
+					a.img(href="index.html")
+						img(src="./img/logo.png", alt="")  
+				.wrap-right
+					.language
+						a(href="") en 
+						em.material-icons arrow_drop_down
+						.language-dropdown
+							a.language__item vn
+					.search 
+						em.material-icons search
+	.wrap-menu
+		.btn-close 
+			em.material-icons close
+		ul.primary-menu 
+			li.active
+				.title
+					a(href="about.html") who are you
+			li
+				.title 
+					a(href="javascript:;") join ching luh
+			li
+				.title 
+					a(href="why-choose.html") why ching luh
+			li.dropdown
+				.title 
+					em.material-icons arrow_forward
+					a(href="javascript:;") sustainability
+				ul.sub-menu
+					li
+						a(href="#") Sustainability statement
+					li
+						a(href="#") Our Focus
+					li
+						a(href="#") Stakeholders Engagement
+					li
+						a(href="#") Anual Report
+			li
+				.title 
+					a(href="new-event.html") news & events
+	.wrap-search
+		.searchbox
+			input(placeholder="Tìm Kiếm")
+			button.btn-search
+				em.material-icons search

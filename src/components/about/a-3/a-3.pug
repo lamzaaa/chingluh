@@ -1,0 +1,73 @@
+section.section.our-history
+	.container 
+		.section-title Our History
+		.container--tabs
+			ul.nav-tabs
+				li.active
+					a(href='#tab-1') 1960s
+				li
+					a(href='#tab-2') 1970s
+				li
+					a(href='#tab-3') 1980s
+				li
+					a(href='#tab-4') 1990s
+				li
+					a(href='#tab-5') 2000s
+				li
+					a(href='#tab-6') 2010s
+				li
+					a(href='#tab-7') 2020s
+			.tab-content
+				#tab-1.tab-panel.active
+					.hero-slide-history 
+						.swiper-container.gallery-thumbs
+							.swiper-wrapper
+								-for(i=1; i<8; i++)
+									.swiper-slide
+										.swiper-inner
+											.title 1969
+							.swiper-button-next 
+							.swiper-button-prev 
+						.swiper-container.gallery-tops
+							.swiper-wrapper
+								-for(i=1; i<8; i++)
+									.swiper-slide
+										.swiper-inner
+											.content Founded in Tainan and named after our founder Mr. Ching Luh Su. Founded in Tainan and named after our founder Mr. Ching Luh Su. Founded in Tainan and named after our founder Mr. Ching Luh Su. 
+											.img
+												img.lazyload(data-src="./img/about/his-1.png", alt="")
+				#tab-2.tab-panel
+					.hero-slide-history 
+						.swiper-container.gallery-thumbs
+							.swiper-wrapper
+								-for(i=1; i<8; i++)
+									.swiper-slide
+										.swiper-inner
+											.title 1970
+							.swiper-button-next 
+							.swiper-button-prev 
+						.swiper-container.gallery-tops
+							.swiper-wrapper
+								-for(i=1; i<8; i++)
+									.swiper-slide
+										.swiper-inner
+											.content 
+												.desc Founded in Tainan and named after our founder Mr. Ching Luh Su. Founded in Tainan and named after our founder Mr. Ching Luh Su. Founded in Tainan and named after our founder Mr. Ching Luh Su. 
+											.img
+												img.lazyload(data-src="./img/about/his-1.png", alt="")
+				#tab-3.tab-panel
+					.hero-slide-history 
+						h1 3
+				#tab-4.tab-panel
+					.hero-slide-history 
+						h1 4
+				#tab-5.tab-panel
+					.hero-slide-history 
+						h1 5
+				#tab-6.tab-panel
+					.hero-slide-history 
+						h1 6
+				#tab-7.tab-panel
+					.hero-slide-history 
+						h1 7
+				
