@@ -1,0 +1,61 @@
+.list-message
+	.section-title
+		padding-bottom: r(14px)
+	.item-message
+		margin-bottom: 30px
+		.img
+			a
+				+img-ratio(250/390)
+		.content
+			padding-top: 30px
+			padding-left: 30px
+			padding-right: 35px
+			padding-bottom: 39px
+			background: $cl-f6
+			transform: all .5s
+			.title
+				padding-bottom: r(18px)
+				a
+					color: $black
+					font-size: r(18px)
+					font-weight: 700
+					line-height: 24px
+					text-align: left
+					text-transform: uppercase
+					letter-spacing: 1.8px
+			.desc
+				padding-bottom: r(17px)
+				p
+					color: $cl-text
+					font-size: 1rem
+					line-height: 22px
+					letter-spacing: 1.6px
+			.button
+				.learn-more
+					display: flex
+					align-items: center
+					span
+						color: $main
+						font-size: 1rem
+						font-weight: 700
+						line-height: 40px
+						letter-spacing: 1.6px
+						padding-left: 6px
+					em
+						color: #014286
+						font-size: r(18px)
+						font-weight: 400
+		&:hover
+			.content
+				background: $gradient
+				.title
+					a
+						color: $white
+				.desc
+					p
+						color: $white
+				.button
+					.learn-more
+						span,
+						em
+							color: $white

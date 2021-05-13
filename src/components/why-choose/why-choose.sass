@@ -1,0 +1,65 @@
+.why-choose
+	.wrap-content
+		width: 100%
+		height: 100%
+		.section-title
+			padding-top: 45px
+			padding-bottom: 14px
+			letter-spacing: 1px
+			@media screen and ( max-width: 1199.98px )
+				padding-top: 0
+		.content
+			.desc
+				margin-bottom: 35px
+				p
+					color: $cl-text
+					font-size: 1rem
+					font-weight: 400
+					line-height: r(22px)
+					letter-spacing: 1.6px
+				@media screen and ( max-width: 1199.98px )
+					margin-bottom: 15px
+			@media screen and ( max-width: 991.98px )
+				margin-bottom: 30px
+	.wrap-img
+		margin-bottom: 60px
+		+img-ratio(400/600)
+		@media screen and ( max-width: 991.98px )
+			margin-bottom: 30px
+	.col-lg-6
+		&:first-child
+			.wrap-content
+				.content
+					.desc
+						padding-right: 75px
+						p
+							padding: 0
+						@media screen and ( max-width: 991.98px )
+							padding-right: 0
+		&:nth-child(3)
+			order: 4
+			.wrap-content
+				padding-left: 30px
+				padding-right: 47px
+				.section-title
+					padding-top: 30px
+				.content
+					.btn-view-more
+						display: none
+				@media screen and ( max-width: 1199.98px )
+					padding: 0
+					.section-title
+						padding-top: 0
+					.content
+						.desc
+							max-height: 154px
+							overflow-y: auto
+							padding-right: 20px
+							@media screen and ( max-width: 991.98px )
+								max-height: 350px
+								padding-right: 0
+			@media screen and ( max-width: 991.98px )
+				order: 3
+		&:last-child
+			@media screen and ( max-width: 991.98px )
+				order: 4

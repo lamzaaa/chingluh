@@ -1,10 +1,42 @@
 .home-6
-	&.section
-		@media screen and ( min-width: 320px )
-			padding: r(80px) 0
-		@media screen and ( min-width: 1024px )
-			padding: r(120px) 0
-		@media screen and ( min-width: 1280px )
-			padding: r(200px) 0
-	.desc
-		margin-bottom: 10px
+	width: 100%
+	min-height: 745px
+	position: relative
+	padding: 0
+	.wraper-content
+		max-width: 635px
+		text-align: center
+		position: absolute
+		top: 46%
+		left: 50%
+		transform: translate(-50%, -50%)
+		.desc
+			color: $white
+			font-size: 16px
+			font-weight: 400
+			line-height: 40px
+			text-align: center
+			text-transform: uppercase
+			letter-spacing: 1.6px
+			margin-bottom: 10px
+		.section-title
+			color: $white
+			font-size: 30px
+			font-weight: 700
+			line-height: 40px
+			text-align: center
+			text-transform: uppercase
+			letter-spacing: 3px
+		.btn-white
+			margin-top: 30px
+			padding: 15px 30px
+	@media screen and ( max-width: 1199.98px )
+		min-height: 100%
+		height: 100vh
+	@media screen and ( max-width: 991.98px )
+		height: 50vh
+		.wraper-content
+			max-width: 100%
+			width: 100%
+			.section-title
+				font-size: 20px

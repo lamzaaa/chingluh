@@ -1,0 +1,38 @@
+section.section.our-people
+	.container 
+		.row 
+			.col-lg-6
+				.wrap-content 
+					.section-title our people
+					.content 
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+			.col-lg-6
+				.wrap-img 
+					-for(i=1; i<5; i++)
+						.item 
+							.img 
+								img.lazyload(data-src="./img/join/l-"+i+".png", alt="")
+section.section.work-environment
+	.container 
+		.row 
+			.col-lg-6 
+				.wrap-img 
+					img.lazyload(data-src="./img/join/l-5.png", alt="")
+			.col-lg-6 
+				.wrap-content 
+					.section-title Work environment
+					.desc 
+						p Ching Luh prides itself on providing its employees with world class working environments. Our success is based on our employees’ ongoing dedication and performance, attention to customer needs, and mindset of continuous improvements. To sustain this, we offer employees a workplace designed to achieve an optimal work-life balance with a range of great benefits, varied by position and location.
+section.section.living-facilities
+	.container
+		.section-title Living facilities
+		.wrap-slide-facilities
+			.swiper-container
+				.swiper-wrapper
+					-for(i=6; i<9; i++)
+						.swiper-slide
+							.swiper-inner
+								.img
+									img.lazyload(data-src="./img/join/l-"+i+".png", alt="")
+			.swiper-button-next 
+			.swiper-button-prev 

@@ -1,0 +1,224 @@
+.contact
+	padding: 50px 0
+	.section-title
+		padding-bottom: 29px
+	.nav-zone
+		margin-bottom: 40px
+	.wrapper-logo
+		max-width: 1020px
+		margin: 0 auto
+		border: 1px solid $cl-e0
+		background: $white
+		display: flex
+		align-items: center
+		margin-bottom: 60px
+		position: relative
+		.ModuleContent
+			width: 100%
+			display: flex
+			align-items: center
+		.wrap-left
+			width: 65%
+			img
+				width: 100%
+				height: 100%
+		.wrap-right
+			width: 40%
+			display: flex
+			align-items: center
+			justify-content: center
+			.content
+				.desc
+					position: absolute
+					bottom: 32px
+					right: 40px
+					display: flex
+					align-items: center
+					em
+						width: 30px
+						height: 30px
+						border-radius: 50%
+						background: $main
+						color: $white
+						font-size: 1rem
+						font-weight: 400
+						display: flex
+						align-items: center
+						justify-content: center
+						margin-right: 10px
+					span
+						color: $cl-text
+						font-size: 1rem
+						font-weight: 400
+						line-height: 48px
+						letter-spacing: 1.6px
+					@media screen and ( max-width: 991.98px )
+						right: 10px
+		@media screen and ( max-width: 767.98px )
+			flex-direction: column
+			.ModuleContent
+				flex-direction: column
+			.wrap-left
+				width: 100%
+			.wrap-right
+				width: 100%
+				padding-top: 30px
+				padding-bottom: 30px
+				.content
+					display: flex
+					flex-direction: column
+					align-items: center
+					.desc
+						position: static
+	.wrapper-form
+		max-width: 1020px
+		margin: 0 auto
+		border: 1px solid $cl-e0
+		background: $white
+		padding-top: 57px
+		padding-left: 50px
+		padding-right: 50px
+		padding-bottom: 40px
+		margin-bottom: 30px
+		.desc
+			color: $cl-text
+			font-size: r(18px)
+			font-weight: 700
+			line-height: 22px
+			letter-spacing: 1.8px
+			padding-bottom: 25px
+		.wrap-form
+			.form-row
+				display: flex
+				align-items: center
+				.form-group
+					width: 49%
+					height: 45px
+					box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.07)
+					border-radius: 23px
+					background: $white
+					margin-bottom: 20px
+					input
+						border: none
+						width: 100%
+						height: 100%
+						background: $white
+						border-radius: 23px
+						padding-left: 15px
+						color: $cl-text
+						font-size: r(14px)
+						font-weight: 400
+						letter-spacing: 1.4px
+						&[placeholder]
+							color: $cl-text
+							font-size: r(14px)
+							font-weight: 400
+							letter-spacing: 1.4px
+					&:last-child
+						margin-left: 20px
+				@media screen and ( max-width: 575.98px )
+					flex-direction: column
+					.form-group
+						width: 100%
+						&:last-child
+							margin-left: 0
+			.form-group
+				margin-bottom: 20px
+				textarea
+					width: 100%
+					height: 120px
+					box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.07)
+					border-radius: 26px
+					border: none
+					background-color: $white
+					padding-left: 15px
+					padding-top: 20px
+					padding-bottom: 20px
+					color: $cl-text
+					font-size: r(14px)
+					font-weight: 400
+					line-height: 40px
+					letter-spacing: 1.4px
+			.formwizard-bottom
+				display: flex
+				align-items: center
+				justify-content: space-between
+				.frm-btnwrap
+					label
+						display: none
+					.frm-btn
+						width: 115px
+						height: 45px
+						border-radius: 23px
+						background: $main
+						input
+							width: 100%
+							height: 100%
+							border: none
+							border-radius: 23px
+							background: $tran
+							color: $white
+							font-size: 1rem
+							font-weight: 700
+							letter-spacing: 1.6px
+				.frm-captcha
+					display: flex
+					align-items: center
+					.RadCaptcha
+						position: relative
+						width: auto !important
+						span
+							position: absolute
+							top: -30px
+							left: 0
+							color: $red
+						div
+							div
+								display: flex
+								align-items: center
+								img
+									width: 172px !important
+									height: 40px !important
+								.rcRefreshImage
+									font-size: 0
+									margin-left: 15px
+									&::before
+										content: 'replay'
+										color: $cl-99
+										font-family: Material Icons
+										font-size: r(32px)
+										font-weight: 400
+					.frm-captcha-input
+						margin-left: 20px
+						label
+							display: none
+						input
+							width: 440px
+							height: 45px
+							box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.07)
+							border-radius: 23px
+							background: $white
+							border: none
+							padding-left: 15px
+						@media screen and ( max-width: 991.98px )
+							input
+								width: auto
+				@media screen and ( max-width: 575.98px )
+					flex-direction: column
+					.frm-captcha
+						flex-direction: column
+						width: 100%
+						.RadCaptcha
+							width: 100% !important
+						.frm-captcha-input
+							margin-left: 0
+							width: 100%
+							margin-top: 20px
+							input
+								width: 100%
+					.frm-btnwrap
+						width: 100%
+						.frm-btn
+							width: 100%
+		@media screen and ( max-width: 991.98px )
+			padding: 30px

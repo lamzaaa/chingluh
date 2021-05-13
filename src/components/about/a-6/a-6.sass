@@ -1,1 +1,110 @@
+.our-locations
+	background: $bg-f5
+	.section-title
+		padding-bottom: 18px
+	.container--tabs
+		.nav-tabs
+			padding-bottom: 3px
+			margin-bottom: r(20px)
+			border-bottom: solid 1px $cl-e0
+			li
+				a
+					position: relative
+					color: $cl-text
+					font-size: r(18px)
+					font-weight: 400
+					line-height: r(40px)
+					letter-spacing: 1.8px
+				&.active
+					a
+						font-weight: 700
+						color: $main
+						&::after
+							position: absolute
+							bottom: -4px
+							left: 0
+							width: 100%
+							height: 1px
+							background: $main
+							content: ''
+			li + li
+				margin-left: 64px
+			@media screen and ( max-width: 767.98px )
+				width: 100%
+				overflow-x: auto
+				overflow-y: hidden
+				padding-bottom: 1rem
+				li
+					width: max-content
+					a
+						white-space: nowrap
+				li + li
+					margin-left: auto
+		.tab-content
+			.tab-panel
+				.wrapper-content
+					margin-bottom: r(16px)
+					.sub-title
+						color: $main
+						font-size: r(30px)
+						font-weight: 700
+						line-height: r(40px)
+						letter-spacing: r(3px)
+						padding-bottom: r(12px)
+					.wrap-desc
+						width: 100%
+						max-width: 1125px
+						display: flex
+						align-items: flex-start
+						justify-content: space-between
 
+						.item
+							.title
+								color: $main
+								font-size: 1rem
+								font-weight: 700
+								line-height: r(40px)
+								letter-spacing: 1.6px
+				.wrapper-slide-location
+					position: relative
+					max-width: 1020px
+					margin: 0 auto
+					.img
+						+img-ratio(520/1020)
+					.swiper-button-next,
+					.swiper-button-prev
+						border: solid 1px $main
+						&::after
+							color: $main
+						&:hover
+							background: $main
+							&::after
+								color: $white
+					.swiper-button-next
+						right: -65px
+					.swiper-button-prev
+						left: -65px
+				@media screen and ( max-width: 1199.98px )
+					.wrapper-slide-location
+						.swiper-button-next
+							right: 0
+						.swiper-button-prev
+							left: 0
+				@media screen and ( max-width: 991.98px )
+					.wrapper-content
+						margin-bottom: r(50px)
+						.wrap-desc
+							flex-direction: row
+							flex-wrap: wrap
+							.item
+								flex: 1 0 50%
+								margin-bottom: 20px
+					.wrapper-slide-location
+						.swiper-button-next,
+						.swiper-button-prev
+							top: -20px
+						.swiper-button-next
+							right: 0
+						.swiper-button-prev
+							left: auto
+							right: 50px

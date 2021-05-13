@@ -6,20 +6,21 @@
 
 <portal:ZonesDisplaySettings runat="server" 
 	ShowDescription="true"
-    DescriptionControlType="textarea"
+    DescriptionControlType="editor"
     ShowPrimaryImage="true"
     ShowSecondImage="false"
 	/>
 <portal:BannerDisplaySettings runat="server" 
 	ShowDescription="true"
     DescriptionControlType="editor"
-    ShowThumbnail="false"
+    ShowThumbnail="true"
     ThumbnailWidth="100"
     ImageWidth="150"
 	/>
 <portal:NewsDisplaySettings runat="server" 
 	ShowAttribute="true"
 	ShowSubtitle="true"
+	ShowAttachment="true"
 	/>
 <portal:SharedFilesDisplaySettings runat="server" 
 	ShowFolder="false"

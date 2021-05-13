@@ -1,4 +1,9 @@
 section#pagebanner
-	.wrap-banner
-		.img 
-			img(src="./img/banner/pagebanner.png", alt="")
+	.page-banner
+		.swiper-container
+			.swiper-wrapper
+				-for(i=1; i<4; i++)
+					.swiper-slide
+						.img 
+							img(src="./img/banner/pagebanner.png", alt="")
+			.swiper-pagination

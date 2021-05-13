@@ -4,6 +4,7 @@
 	],
 	"js": [
 		"bower_components/jquery/dist/jquery.min.js",
+		"src/_plugins/aos.js",
 		"src/_plugins/**.min.js",
 		"src/_plugins/**.js",
 		"src/_plugins/**/**.min.js",
@@ -12,8 +13,9 @@
 		"src/_plugins/jquery.sticky.js"
 	],
 	"css": [
+		"src/_plugins/aos.css",
+		"src/_plugins/**/**.min.css",
 		"src/_plugins/font.css",
-		"src/_plugins/swiper/swiper-bundle.min.css",
 		"bower_components/fancybox/dist/jquery.fancybox.min.css"
 	]
 }

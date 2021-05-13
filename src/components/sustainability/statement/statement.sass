@@ -1,0 +1,132 @@
+.statement
+	padding: 50px 0
+	.section-title
+		padding-bottom: 28px
+	.nav-zone
+		li
+			&:first-child
+				a
+					padding: 0 17px
+			&:last-child
+				a
+					padding: 0 32px
+			+ li
+				margin-left: 18px
+	.wrapper-content
+		position: relative
+		padding-left: 38px
+		height: 100%
+		display: flex
+		align-items: center
+		.content
+			position: relative
+			z-index: 2
+			.sub-title
+				color: $main
+				font-size: 24px
+				font-weight: 700
+				line-height: 20px
+				letter-spacing: 2.4px
+				padding-left: 115px
+				margin-bottom: 27px
+			.desc
+				padding-right: 40px
+				color: $cl-text
+				font-size: r(36px)
+				font-weight: 400
+				line-height: 42px
+				letter-spacing: 3.6px
+
+		&::before
+			position: absolute
+			top: 52.5%
+			transform: translateY(-50%)
+			left: 0
+			width: 134px
+			height: 265px
+			content: url('../img/border.png')
+			z-index: 1
+	.wrapper-img
+		display: flex
+		margin-right: -50%
+		flex-direction: row
+		flex-wrap: wrap
+		.item
+			&:nth-child(1)
+				margin-left: 145px
+			&:nth-child(1),
+			&:nth-child(3)
+				padding-right: 5px
+			&:nth-child(2),
+			&:nth-child(4)
+				padding-left: 5px
+			&:nth-child(3)
+				margin-top: 10px
+			&:nth-child(4)
+				margin-top: 10px
+			&:nth-child(1)
+				margin-top: 125px
+	@media screen and ( max-width: 1279.98px )
+		.wrapper-content
+			.content
+				.desc
+					font-size: r(20px)
+					line-height: 30px
+	@media screen and ( max-width: 1199.98px )
+		.wrapper-img
+			margin-right: 0
+			.item
+				flex: 1 0 50%
+				&:nth-child(1)
+					margin-top: 20px
+					margin-left: 0
+				&:nth-child(2)
+					display: flex
+					align-items: flex-end
+	@media screen and ( max-width: 991.98px )
+		.nav-zone
+			margin-bottom: 30px
+		.wrapper-content
+			padding-left: 0
+			.content
+				.sub-title
+					padding-left: 0
+				.desc
+					padding-bottom: 0
+					padding-right: 0
+					font-size: r(18px)
+			&::before
+				top: 100%
+				transform: unset
+				width: 100%
+				height: 2px
+				border: none
+				background: $main
+		.wrapper-img
+			width: 100%
+			.item
+				width: 100%
+				.img
+					width: 100%
+					+img-ratio(190/380)
+	@media screen and ( max-width: 575.98px )
+		.wrapper-content
+			&::before
+				content: ''
+		.wrapper-img
+			padding-top: 30px
+			flex-direction: column
+			.item
+				margin-bottom: 30px
+				&:nth-child(1),
+				&:nth-child(3)
+					padding-right: 0
+				&:nth-child(2),
+				&:nth-child(4)
+					padding-left: 0
+				&:nth-child(3)
+					margin-top: 0
+				&:nth-child(4)
+					margin-top: 0
+				&:nth-child(1)
+					margin-top: 0

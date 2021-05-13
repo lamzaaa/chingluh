@@ -1,0 +1,159 @@
+.our-people
+	.wrap-content
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		.section-title
+			padding-bottom: r(14px)
+		.content
+			padding-right: 101px
+			p
+				color: $cl-text
+				font-size: 1rem
+				line-height: 22px
+				text-align: left
+				letter-spacing: 1px
+	.wrap-img
+		display: flex
+		margin-right: -50%
+		flex-direction: row
+		flex-wrap: wrap
+		.item
+			&:nth-child(1),
+			&:nth-child(3)
+				padding-right: 5px
+			&:nth-child(2),
+			&:nth-child(4)
+				padding-left: 5px
+			&:nth-child(3)
+				margin-top: -19%
+			&:nth-child(4)
+				margin-top: 10px
+			&:nth-child(2)
+				margin-top: 56px
+	@media screen and ( max-width: 1199.98px )
+		.wrap-img
+			margin-right: 0
+			.item
+				flex: 1 0 50%
+				&:nth-child(3)
+					margin-top: -13.8%
+	@media screen and ( max-width: 991.98px )
+		.wrap-content
+			.content
+				padding-right: 0
+				margin-bottom: 30px
+		.wrap-img
+			width: 100%
+			.item
+				width: 100%
+				.img
+					+img-ratio(190/380)
+				&:nth-child(3)
+					margin-top: 10px
+				&:nth-child(2)
+					margin-top: 0
+.work-environment
+	background: $bg-f5
+	.wrap-img
+		height: 100%
+		+img-ratio(400/600)
+	.wrap-content
+		height: 100%
+		padding-top: 60px
+		padding-left: 60px
+		padding-right: 30px
+		.section-title
+			padding-bottom: r(14px)
+		.desc
+			p
+				color: $cl-text
+				font-size: 1rem
+				line-height: 22px
+				letter-spacing: 1px
+		@media screen and ( max-width: 1199.98px )
+			padding: 30px
+	@media screen and ( max-width: 991.98px )
+		.wrap-content
+			padding-top: 0
+			padding-left: 0
+			padding-right: 0
+		.col-lg-6
+			&:first-child
+				order: 2
+.living-facilities
+	.section-title
+		padding-bottom: r(14px)
+	.wrap-slide-facilities
+		position: relative
+		height: 400px
+		display: flex
+		align-items: center
+		overflow: hidden
+		.swiper-inner
+			.img
+				position: relative
+				+img-ratio(365/600)
+				img
+					transition: all .5s
+				&::after
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					background: rgba($color: $black, $alpha: .35)
+					content: ''
+		.swiper-container
+			overflow: visible
+			width: 100%
+		.swiper-slide
+			&-active
+				z-index: 100
+				.swiper-inner
+					.img
+						overflow: visible
+						img
+							transform: scale(1.6)
+						&::after
+							opacity: 0
+							visibility: hidden
+		.swiper-button-next,
+		.swiper-button-prev
+			border: solid 1px $white
+			&::after
+				color: $white
+			@media screen and ( min-width: 1025px )
+				&:hover
+					background: $main
+					border: solid 1px $tran
+		.swiper-button-next,
+			right: 235px
+		.swiper-button-prev
+			left: 235px
+	@media screen and ( max-width: 1024.98px )
+		.wrap-slide-facilities
+			height: auto
+			padding: 50px 0
+	@media screen and ( max-width: 991.98px )
+		.wrap-slide-facilities
+			padding: 0
+			padding-top: 40px
+			.swiper-slide
+				&-active
+					.swiper-inner
+						.img
+							img
+								transform: scale(1)
+			.swiper-button-next,
+			.swiper-button-prev
+				top: 30px
+				border: solid 1px $main
+				&::after
+					color: $main
+			.swiper-button-next
+				right: 0
+			.swiper-button-prev
+				left: auto
+				right: 50px

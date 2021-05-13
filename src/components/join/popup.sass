@@ -1,0 +1,139 @@
+#popup-form
+	width: 1020px
+	background: $white
+	padding: 60px
+	display: none
+	@media screen and ( max-width: 575.98px )
+		padding: 30px
+	.popup-title
+		color: $main
+		font-size: r(24px)
+		font-weight: 700
+		line-height: 40px
+		letter-spacing: 2.4px
+		padding-bottom: 16px
+	.wrap-form
+		.form-row
+			display: flex
+			align-items: center
+			.form-group
+				width: 49%
+				height: 45px
+				box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.07)
+				border-radius: 23px
+				background: $white
+				margin-bottom: 20px
+				input
+					border: 1px solid $cl-e0
+					width: 100%
+					height: 100%
+					background: $white
+					border-radius: 23px
+					padding-left: 15px
+					color: $cl-text
+					font-size: r(14px)
+					font-weight: 400
+					letter-spacing: 1.4px
+					&[placeholder]
+						color: $cl-text
+						font-size: 1rem
+						font-weight: 400
+						letter-spacing: 1.4px
+				&:last-child
+					margin-left: 20px
+			@media screen and ( max-width: 575.98px )
+				flex-direction: column
+				.form-group
+					width: 100%
+					&:last-child
+						margin-left: 0
+		.form-group
+			margin-bottom: 20px
+			textarea
+				width: 100%
+				height: 120px
+				box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.07)
+				border-radius: 26px
+				border: 1px solid $cl-e0
+				background-color: $white
+				padding-left: 15px
+				padding-bottom: 20px
+				color: $cl-text
+				font-size: r(14px)
+				font-weight: 400
+				line-height: 40px
+				letter-spacing: 1.4px
+			&.qupload
+				.label
+					padding-bottom: 16px
+					color: $cl-text
+					font-size: 16px
+					line-height: 22px
+					letter-spacing: 1.6px
+				.RadUpload
+					.ruInputs
+						li
+							.ruFileWrap
+								position: relative
+								display: inline-block
+								white-space: nowrap
+								vertical-align: top
+								overflow: hidden!important
+								height: auto
+								input[type="button"],
+								input[type="file"]
+									width: 150px
+									height: 40px
+									border-radius: 20px
+									border: 1px solid $main
+									cursor: pointer
+									background: $tran
+									color: $main
+									font-size: 16px
+									font-weight: 700
+									letter-spacing: 1.6px
+								input[type="file"]
+									opacity: 0
+									position: absolute
+									top: 0
+									left: 0
+									z-index: 1
+									cursor: pointer
+		.formwizard-bottom
+			width: 100%
+			.frm-btnwrap
+				label
+					display: none
+				.frm-btn
+					width: 150px
+					height: 40px
+					border-radius: 20px
+					border: 2px solid $main
+					background: $main
+					input[type="submit"]
+						width: 100%
+						height: 100%
+						border: none
+						color: $white
+						font-size: 16px
+						font-weight: 700
+						letter-spacing: 1.6px
+						padding: 0
+						background: none
+	.fancybox-close-small
+		opacity: 1
+		padding: 0
+		svg
+			display: none
+		&::before
+			content: 'x'
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			color: $main
+			font-size: 30px
+			line-height: 40px
+			text-transform: uppercase
+			letter-spacing: 3px

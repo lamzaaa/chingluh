@@ -3,7 +3,7 @@
 	background-color: $white
 	.breadcrumb
 		display: flex
-		align-items: flex-end
+		align-items: center
 		background-color: transparent
 		flex-wrap: wrap
 		list-style: none
@@ -32,3 +32,21 @@
 			&:hover
 				a
 					color: $main
+			&:first-child
+				width: 44px
+				height: 22px
+				font-size: 0
+				position: relative
+				a
+					font-size: 0
+					span
+						font-size: 0
+						&::before
+							position: absolute
+							top: 0
+							left: 0
+							content: url('../img/ic-breadcrumb.png')
+			@media screen and ( max-width: 575.98px )
+				a,
+				span
+					font-size: r(10px)
